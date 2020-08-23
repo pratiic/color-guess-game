@@ -1,0 +1,25 @@
+.colors {
+	background-color: $dark-blue;
+	height: 65vh;
+	display: grid;
+	grid-template-columns: repeat(3, 10rem);
+	grid-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+}
+
+.color {
+	height: 10rem;
+	transition: background-color 885ms ease-in, transform 400ms ease-in;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.01);
+	}
+
+	&.incorrect {
+		transform: scaleY(0);
+	}
+}

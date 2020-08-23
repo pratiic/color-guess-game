@@ -1,0 +1,28 @@
+.menu {
+	background-color: white;
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+.new-colors {
+	font-size: 1.8rem;
+	text-transform: capitalize;
+	background-color: lightgrey;
+	width: max-content;
+	padding: 0.5rem 1rem;
+	border-radius: 3px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+
+	&:hover {
+		background-color: darken(lightgrey, 3%);
+	}
+
+	&:active {
+		background-color: darken(lightgrey, 10%);
+	}
+}

@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  font-size: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-large {
+  font-size: 4rem;
+}
+
+.text-medium {
+  font-size: 2.5rem;
+}
+
+.text-small {
+  font-size: 1.75rem;
+}
+
+.header {
+  background-color: #007bff;
+  height: 25vh;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.heading-main {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chosen-color {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.turns {
+  font-size: 1.95rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.turns-count {
+  font-size: 2.3rem;
+  margin-left: 1.5rem;
+}
+
+.result {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.menu {
+  background-color: white;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.new-colors {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  background-color: lightgrey;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.new-colors:hover {
+  background-color: #cbcbcb;
+}
+
+.new-colors:active {
+  background-color: #bababa;
+}
+
+.colors {
+  background-color: #262632;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.color {
+  height: 10rem;
+  transition: background-color 885ms ease-in, transform 400ms ease-in;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.color:hover {
+  transform: scale(1.01);
+}
+
+.color.incorrect {
+  transform: scaleY(0);
+}
